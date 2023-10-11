@@ -32,6 +32,7 @@ c="Ahmet";
 //4-diğer objeler
 
 int yas = 15;
+
 double maas = 1500.56;
 
 String ad ="Mustafa";
@@ -50,41 +51,20 @@ Object file = "asdasd";
 print(dogdudur);
 
 
-
 //String Interpolasyon
+
 
 print("1-Ad: "+ad +", Yaş: "+ yas.toString()+ ", DTarih: " + dogumGunu.toString());
 
+
 print("2-Ad: $ad, Yaş: $yas, DTarih: ${dogumGunu}");
 
-//var ile değişken tanımlama
 
+//var ile değişken tanımlama
 var a1= 15;
 
+
 var isim1 = "Ahmet";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-  
-
 
 
 
