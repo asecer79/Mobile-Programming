@@ -10,7 +10,7 @@ void main(List<String> args) {
     print("$a = $b");
   }
 
-  int gun = 1;
+  int gun = 7;
 
   switch (gun) {
     case 1:
@@ -34,4 +34,8 @@ void main(List<String> args) {
     default:
       print("Pazar");
   }
+
+  //ternary if/ kısa if
+  String name = (gun == 1) ? "Okula git" : "Evde kal";
+  print(name);
 }
