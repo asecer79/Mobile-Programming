@@ -39,16 +39,39 @@ String ad ="Mustafa";
 bool dogdudur = !true;
 
 
+DateTime dogumGunu = DateTime(2000,12,12);
+
 Object yas1 = 15;
 
 yas1="";
 
 Object file = "asdasd";
 
-
-
-
 print(dogdudur);
+
+
+
+//String Interpolasyon
+
+print("1-Ad: "+ad +", Yaş: "+ yas.toString()+ ", DTarih: " + dogumGunu.toString());
+
+print("2-Ad: $ad, Yaş: $yas, DTarih: ${dogumGunu}");
+
+//var ile değişken tanımlama
+
+var a1= 15;
+
+var isim1 = "Ahmet";
+
+
+
+
+
+
+
+
+
+
 
 
 
