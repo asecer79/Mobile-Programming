@@ -9,7 +9,7 @@
             "request": "launch",
             "type": "dart",
             "program": "${file}",
-            "console": "terminal"
+            // "console": "terminal"
         }
     ]
 }
