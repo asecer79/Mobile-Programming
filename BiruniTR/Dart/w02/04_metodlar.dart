@@ -1,4 +1,5 @@
 //entry point/giriş metodu
+
 void main(List<String> args) {
   //print(Faktoriyel(5));
 
@@ -6,9 +7,13 @@ void main(List<String> args) {
 
   //print(Sum(2, 2));
 
-  print(MatematikIslemi(Sum, 5, 6));
+  //print(MatematikIslemi(Sum, 5, 6));
 
-  print(MatematikIslemi(Divide, 12, 4));
+  // print(MatematikIslemi(Divide, 12, 4));
+
+  // print(IslemSec(2)(12, 3));
+
+  print(product(5, 8));
 }
 
 //fonksiyon/metodlar/metotlar/routine/yordam/procedure
@@ -61,6 +66,24 @@ double Divide(int a, int b) => a / b;
 
 //7. Fonksiyon tipli, yada fonksiyon parametreli fonksiyonlar
 
-int MatematikIslemi(Function islem, int a, int b) {
+int MatematikIslemi(Function(int, int) islem, int a, int b) {
   return islem(a, b);
 }
+
+Function IslemSec(int islemKod) {
+  if (islemKod == 1) {
+    return Sum;
+  }
+  if (islemKod == 2) {
+    return Divide;
+  }
+
+  return Toplam5;
+}
+
+//8. Anonim/Anonymous metodlar
+
+var product = (int a, int b) {
+  //işlemler
+  return a * b;
+};
