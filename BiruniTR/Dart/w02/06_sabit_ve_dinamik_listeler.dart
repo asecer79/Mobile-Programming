@@ -26,4 +26,17 @@ void main(List<String> args) {
   for (var element in isimler) {
     print(element);
   }
+
+  isimler.add("Mustafa");
+
+  isimler[1] = "Ahmet";
+
+  print(isimler.length);
+  print(isimler.isEmpty);
+  var birlestir = isimler.join("@");
+  print(birlestir);
+  var dizi = birlestir.split("@");
+  print(dizi);
+
+  List<dynamic> liste2 = [1, true, "Aydın", DateTime(2025)];
 }
