@@ -41,6 +41,12 @@ void main(List<String> args) {
   }
 
   print(Toplam(10));
+
+  //for in dongusu
+  List<int> list1 = [1, 2, 3];
+  for (var element in list1) {
+    print(element);
+  }
 }
 
 //recursive döngüler /Özyinelemeli
