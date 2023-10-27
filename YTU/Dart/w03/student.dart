@@ -5,8 +5,6 @@ class Student {
 
   //members can be defined as 2 main section
   //01. Instance members
-  //02. Static members // will be discussed next time
-
   //All of the members given below are Instance members
   //01-fields members, variables, data types
   int? _id;
@@ -22,7 +20,7 @@ class Student {
     this._age = id;
   }
 
-    int? get getAge {
+  int? get getAge {
     return _age;
   }
 
@@ -53,15 +51,15 @@ class Student {
   //05-Static members .....
   //.....
 
-
-
   //access modifiers
   //public
   int? x;
   String? y;
 
-
   //private
   int? _x2;
   String? _y2;
+
+  //02. Static members // will be discussed next time
+  static String? schoolName;
 }
