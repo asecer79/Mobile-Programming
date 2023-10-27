@@ -65,30 +65,56 @@ class Student {
   //named constructor 2
   Student.withNameAndLastName(String name, String lastName) {
     //if we need some initial ops.
+    _firstName = name;
     _lastName = lastName;
   }
 
+  //named constructor 2
+  Student.withThisKeyword({this.x, this.y}) {
+    //if we need some initial ops.
+  }
+ /* Student.withThisKeyword(int x1, String y1) {
+    //if we need some initial ops.
+    x = x1;
+    y = y1;
+  }*/
+
   //named constructor 3
-  Student.withNameAndLastNameAndAge(String name, String lastName, int age) {
+  Student.withNameAndLastNameAndAge(
+      {required firsName, required String lastName, required int age}) {
     //if we need some initial ops.
     _age = age;
   }
 
   //default factory constructor
-  factory Student(num option, bool c) {
+  factory Student({required num option, required bool c}) {
     if (option >= 5) {
-      return Student.withNameAndLastName("Ahmet", "Mustafa");
+      return Student.withNameAndLastName(
+        "Ahmet",
+        "Mustafa",
+      );
     } else {
-      return Student.withNameAndLastNameAndAge("Ali", "Kalay", 36);
+      return Student.withNameAndLastNameAndAge(
+        firsName: "Ali",
+        lastName: "Kalay",
+        age: 36,
+      );
     }
   }
 
   //named factory constructor
   factory Student.factorWithSettings(num option, bool c) {
     if (option >= 5) {
-      return Student.withNameAndLastName("Ahmet", "Mustafa");
+      return Student.withNameAndLastName(
+        "Ahmet",
+        "Mustafa",
+      );
     } else {
-      return Student.withNameAndLastNameAndAge("Ali", "Kalay", 36);
+      return Student.withNameAndLastNameAndAge(
+        firsName: "Ali",
+        lastName: "Kalay",
+        age: 36,
+      );
     }
   }
 

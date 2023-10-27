@@ -15,8 +15,19 @@ void main(List<String> args) {
   //userDefinedDatatype objectref/object/instance = userDefinedDatatype, () = default constructor
   //Student student1 = Student();
 
-  
   Student student2 = Student.withName("Ahmet"); //named constructor call.
-  Student student3 = Student.withNameAndLastName("Ahmet", "Kalay"); //named constructor call.
-  Student student4 = Student.withNameAndLastNameAndAge("Ahmet", "Kalay", 26); //named constructor call.
+  Student student3 =
+      Student.withNameAndLastName("Ahmet", "Kalay"); //named constructor call.
+
+  //desired initialization of an object
+  Student student4 = Student.withNameAndLastNameAndAge(
+    age: 15,
+    lastName: "Mustafa",
+    firsName: "Alican",
+  ); //named constructor with named params call.
+
+  Student student5 = Student(
+    option: 12,
+    c: false,
+  );
 }
