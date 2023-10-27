@@ -13,7 +13,9 @@ void main(List<String> args) {
   Student.m1();
 */
   //userDefinedDatatype objectref/object/instance = userDefinedDatatype, () = default constructor
-  Student student1 = Student();
+  //Student student1 = Student();
+
+  
   Student student2 = Student.withName("Ahmet"); //named constructor call.
   Student student3 = Student.withNameAndLastName("Ahmet", "Kalay"); //named constructor call.
   Student student4 = Student.withNameAndLastNameAndAge("Ahmet", "Kalay", 26); //named constructor call.
