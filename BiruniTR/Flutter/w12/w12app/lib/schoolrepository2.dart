@@ -18,7 +18,7 @@ class DbHelper {
     }
 
     if (recreate || !await File(fullPath).exists()) {
-      ByteData data = await rootBundle.load("assets/database/schooldb.db");
+      ByteData data = await rootBundle.load("assests/database/schooldb.db");
       List<int> bytes = data.buffer.asUint8List();
       await File(fullPath).writeAsBytes(bytes);
     }
@@ -28,7 +28,7 @@ class DbHelper {
 }
 
 class SchoolRepository2 {
-  var dbHelper = DbHelper();
+  var dbHelper = DbHelper(recreate: false);
 
   Future<List<Student>> getStudents() async {
     final db = await dbHelper.getDatabase();
@@ -44,19 +44,19 @@ class SchoolRepository2 {
   Future<int> addStudent(Student student) async {
     final db = await dbHelper.getDatabase();
 
-    return db.insert("students", student.toMap());
+    return await db.insert("students", student.toMap());
   }
 
   Future<int> updateStudent(Student student) async {
     final db = await dbHelper.getDatabase();
 
-    return db.update("students", student.toMap(),
+    return await db.update("students", student.toMap(),
         where: "id = ?", whereArgs: [student.id]);
   }
 
   Future<int> deleteStudent(int id) async {
     final db = await dbHelper.getDatabase();
 
-    return db.delete("students", whereArgs: [id]);
+    return await db.delete("students", where: "id = ?", whereArgs: [id]);
   }
 }
