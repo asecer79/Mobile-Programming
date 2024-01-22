@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "475166379992",
+    "project_id": "attendancefollower",
+    "storage_bucket": "attendancefollower.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:475166379992:android:714c09aa5a743f646d6cad",
+        "android_client_info": {
+          "package_name": "com.example.w15app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH7qLhittOxn34dohhgllI7WnPpLB0cFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
